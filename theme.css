@@ -1,0 +1,125 @@
+h1{
+    position: absolute;
+    font-family: monospace;
+    font-size: 25px;
+    left: 450px;
+    top: 350px;
+}
+
+
+body{
+    background: fixed;
+    background-image: url("////////");
+    background-repeat: no-repeat;
+    height: 100%;
+}
+    
+
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: none;
+    display: block;
+    color: #F1B636;
+    font-family: monospace;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+
+.navbar a[id=colored] {
+ 
+    background-color: #002A64;      
+}
+
+.navbar a:hover {
+ 
+    color: #002A64;      
+}
+
+.navbar a[id=colored]:hover {
+ 
+    color: #06004c;      
+}
+
+.parallax {
+    height: 150px;
+    width:100%;
+    background-color: black;
+    top: 55%;
+    
+    
+    
+}
+
+.parallax2 {
+    height: 150px;
+    width:100%;
+    background-color: pink;
+    top: 85%;
+    
+    
+    
+}
+
+button {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 4%;
+    margin-top: 40%;
+    background-color: white;
+    color: white;
+    font-family: Courier New;
+    padding: 3px;
+    border-radius: 5px;
+    
+}
+
+
+
+html,body, footer{
+    min-height:100%;
+    min-width:100%;
+    margin:0;
+    padding: 0;
+    border: 0;
+}
+
+
+
+.main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px; 
+}
+
+
+
+
+
+
+
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: #002A64;
+    color: #F1B636;
+    
+    bottom: auto;
+    
+}
+
+
+
