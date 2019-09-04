@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+	 <link rel="stylesheet" type="text/css" href="theme.css">
+	 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <title>Video</title>
+
+</head>
+<style>
+	navbar{
+               position: absolute;
+               left: 180px;
+               top: 0px;
+          }
+    .show-box{
+		height: 100%;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+</style>
+
+
+<body>
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+	<img src="1460065.svg" style = "float: left; width: 40px; height: 40px; padding-right: 10px"/><u><a style = "padding-top: 8px; font-size:80%">Video Editing</a></u>
+
+
+	<a href="#" style = "padding-top:50px;">About</a>
+    <a href="#">S????</a>
+    <a href="#">Something</a>
+    <a href="#">Contact</a>
+
+	<a  style = "padding-top: 100px">///</a>
+	<a id="counter"></a>
+
+  </div>
+</div>
+
+
+<div class="show-box" style="background-image: url(pic1.jpg);"
+	 </div>
+<div class="show-box" style="background-image: url(pic2.jpg);"
+	 </div>
+<div class="show-box" style="background-image: url(pic3.jpg);"
+	 </div>
+
+
+
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Something</p>
+  </div>
+
+</div>
+
+
+<div class="navbar">
+<span style="font-size:30px;cursor:pointer;color: white;" onclick="openNav()">&#9776;</span>
+<button id="myBtn">Text</button>
+</div>
+<div class="parallax">
+	<video width="30%" height="60%" controls>
+  <source src="Video/video.mp4" type="video/mp4">
+</div>
+
+</div>
+<div>
+Something
+
+
+</div>
+
+<div class="parallax2">
+	<video width="30%" height="60%" controls>
+  <source src="Video/video.mp4" type="video/mp4">
+</div>
+
+<div>
+Something else.
+
+
+</div>
+
+<div class="parallax3"></div>
+<div>
+Another thing
+
+
+</div>
+
+<script>
+	window.onload = function(){
+		var body = document.getElementsByTagName("body")[0];
+		body.style.height = window.innerHeight + "px";
+
+		var new_pos, old_pos = 0;
+
+
+		window.onscroll = function(){
+			var screen = window.innerHeight;
+			var scroll = document.body.scrollTop;
+			if(scroll == 0){
+				old_pos = 0;
+			}
+		}
+		if((scroll % screen) + 50 > screen){
+			new_pos = Math.ceil(scroll / screen);
+			if((new_pos != old_pos)){
+				document.body.scrollTop = new_pos * screen;
+			}
+			old_pos;
+		}
+	}
+</script>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel{
+	var i;
+	var x = document.getElementByClassName("mySlides");
+	for (i = 0; i < x.length; i++){
+		x[i].style.display = "none";
+	}
+	myIndex++;
+	if (myIndex > x.length) {myIndex = 1}
+	x[myIndex-1].style.display = "block";
+	setTimeout(carousel, 2000);
+}
+
+
+</script>
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+
+<script>
+
+var modal = document.getElementById('myModal');
+
+
+var btn = document.getElementById("myBtn");
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+
+
+
+
+<p style ="color : white" >something</p>
+
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>
